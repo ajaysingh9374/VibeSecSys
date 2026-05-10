@@ -1,0 +1,42 @@
+PROJECT CONTEXT (do not change):
+- Project: VibeSecSys
+- Current stage: <STAGE_NUMBER_AND_NAME>
+- Development is step-by-step. No scope jumps are allowed.
+- Stage 1 (baseline mechanics) is complete.
+
+REPOSITORY STRUCTURE (context only, Do NOT change the repository structure unless explicitly instructed.):
+- scanner/ 	: Contains scanning and XML parsing logic (Nmap execution, XML parser).
+- samples/ 	: Contains sample XML scan files used for simulation and testing.
+- reports/ 	: Contains generated scan outputs (XML files only).
+- reporting/ 	: Reserved for future report generation logic (Stage 3). Not used yet.
+- ai/ 		: Reserved for AI-assisted reasoning modules (Stage 2.3 onward). Not used yet.
+- src/ 		: Reserved for future refactoring or shared utilities if needed. Not used yet.
+- docs/ 	: Contains project logs, stage definitions, planning notes, and scope documentation.
+- prompts/ 	: Contains important prompts used during development for transparency and reproducibility.
+- main.py 	: Entry point that orchestrates scanning, parsing, baseline analysis, and later stages.
+
+PROMPT HISTORY (mandatory tracking):
+- Save this prompt under prompts/
+- Use naming:
+  prompts/stage<stage>-step<step>-<short-name>.txt
+- Example:
+  prompts/stage3-step3-cyberlab-report.txt
+- Keep prompts simple, readable, reusable
+
+GLOBAL GUARDRAILS (fixed for this stage):
+- Follow only the current stage and step.
+- Do NOT introduce functionality from later stages.
+- Do NOT add exploitation, vulnerability scoring, CVE lookups, or reporting unless explicitly stated.
+- AI, if allowed in this stage, must be advisory only.
+- Any AI-generated content must include a clear warning that it is AI-generated.
+- Human judgement always remains the final authority.
+- Do NOT commit automatically; I will review and commit.
+
+TASK FOR THIS STEP (this is the only part change): 
+<DESCRIBE THE CURRENT STEP IN SIMPLE TERMS>
+
+EXPECTED OUTCOME:
+- Output must match the scope of this step only.
+- Boundaries must be clear and not ambiguous.
+- This output should prepare for the next step, not complete it.
+
