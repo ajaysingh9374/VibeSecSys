@@ -3,6 +3,7 @@
 # Execution: Strict step-by-step execution
 # Co-development: CodeX + K2509118
 
+from ai.data_preparation import prepare_ai_input
 from scanner.baseline import generate_baseline
 from scanner.scan_runner import run_localhost_scan, select_scan_mode
 from scanner.xml_loader import load_xml
@@ -34,6 +35,9 @@ def main():
         print(f"Total hosts: {baseline_summary['total_hosts']}")
         print(f"Total open ports: {baseline_summary['total_open_ports']}")
         print(f"Discovered services: {', '.join(baseline_summary['discovered_services'])}")
+        ai_input = prepare_ai_input(parsed_data, baseline_summary)
+        print("AI input prepared for next stage")
+        print(ai_input)
 
 
 if __name__ == "__main__":
