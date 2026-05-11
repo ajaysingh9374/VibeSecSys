@@ -39,4 +39,6 @@ Scan Data:
         return "AI request failed"
 
     print("AI response received")
-    return response.output_text
+    cleaned_ai_text = str(response.output_text).strip()
+    print("AI response processed")
+    return cleaned_ai_text
