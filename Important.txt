@@ -1,0 +1,19 @@
+git clone https://github.com/YOUR_USERNAME/VibeSecSys.git
+cd VibeSecSys
+python -m venv venv
+venv\Scripts\activate
+
+pip install openai python-dotenv
+
+git add .
+git commit -m "feat(setup): initialise VibeSecSys project with venv and dependencies"
+git push
+
+
+/prompts/stageX-stepY-name.txt
+
+.gitignore:
+venv/
+__pycache__/
+.env
+*.pyc

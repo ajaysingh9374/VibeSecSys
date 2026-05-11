@@ -1,0 +1,49 @@
+VibeSecSys Development Prompt
+
+PROJECT CONTEXT (DO NOT CHANGE)
+- Project: VibeSecSys
+- Goal: Build a working cybersecurity application (NOT coursework)
+- Development method: PROMPTS → CODEX BUILDS → we validate
+- Strict step-by-step execution (NO scope jumps)
+
+CURRENT STAGE
+- Stage: <STAGE_NUMBER + NAME>
+- Step: <STEP_NUMBER + TASK_NAME>
+- Only perform THIS step
+
+REPOSITORY STRUCTURE (DO NOT MODIFY unless instructed)
+- scanner/     : XML parsing and scan handling
+- samples/     : Sample Nmap XML files
+- reports/     : Output reports (final stage)
+- ai/          : AI integration module
+- src/         : Shared utilities (if needed later)
+- docs/        : Notes / logs
+- prompts/     : Stored prompts (MANDATORY)
+- main.py      : Entry point
+
+PROMPT TRACKING (MANDATORY)
+- Save this file as:
+  prompts/stage<stage>-step<step>-<short-name>.txt
+
+- Example:
+  prompts/stage5-step1-ai-integration.txt
+
+RULES (STRICT)
+- DO NOT jump to other stages
+- DO NOT add extra features
+- DO NOT explain theory
+- DO NOT generate coursework
+- DO NOT modify unrelated files
+- Only build what is required in this step
+
+AI RULE (IMPORTANT)
+- AI must be embedded into the application (not manual prompting)
+- No standalone/manual prompts outside system
+
+TASK (ONLY THIS)
+<WRITE CLEAR TASK HERE>
+
+EXPECTED OUTPUT
+- Clean, working Python code
+- Modular and reusable
+- Ready for next step (not beyond)

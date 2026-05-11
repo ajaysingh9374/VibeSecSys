@@ -1,0 +1,32 @@
+PROJECT CONTEXT (Remain same for whole project/application)
+-Project: VibeSecSys
+-Goal: Build a working cybersecurity application
+-Strict step-by-step execution
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+ai/          : AI integration module
+src/         : Shared utilities (if needed later)
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE - Stage tracking.
+-Stage: 1 — Core Application Skeleton
+-Step: 1.1 — Project structure and main entry
+
+SAVE PROMPTS (Important)
+-Save as: prompts/stage1-step1-project-start_checks.txt
+
+RULES (STRICT): Only follow what is required in this step
+TASK - Requirements:
+1. Ensure 'main.py' is a valid entry point.
+2. develop 'main.py' to Print HELLO WORLD. Add Project Context as comment in main.py. 
+3. check if main.py is executeable in open terminal.
+4. List which directory need initialization
+
+EXPECTED OUTPUT
+- Running 'python main.py' works without error
