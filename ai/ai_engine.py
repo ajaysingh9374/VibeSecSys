@@ -1,5 +1,10 @@
 import os
 
+from dotenv import load_dotenv
+from openai import OpenAI
+
+load_dotenv()
+
 
 def generate_ai_analysis(ai_input: str):
     print("AI module initialized")
@@ -21,4 +26,17 @@ Scan Data:
 """
 
     print("AI prompt prepared")
-    return prompt_template
+    print("Sending data to AI...")
+
+    try:
+        client = OpenAI(api_key=api_key)
+        response = client.responses.create(
+            model="gpt-5.4-mini",
+            input=prompt_template,
+        )
+    except Exception:
+        print("AI request failed")
+        return "AI request failed"
+
+    print("AI response received")
+    return response.output_text

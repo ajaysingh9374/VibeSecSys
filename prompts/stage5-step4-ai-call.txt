@@ -1,0 +1,49 @@
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Build a working cybersecurity application
+-Development method: PROMPTS → CODEX BUILDS → we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE
+-Stage: 5 — AI Integration
+-Step: 5.4 — AI request execution
+
+SAVE PROMPT and UPDATE DOCUMENTATION (Important)
+-Save as: prompts/stage5-step4-ai-call.txt
+
+RULES (STRICT): Only follow what is required in this step
+
+TASK: Execute AI request using OpenAI API.
+
+Requirements:
+1. Use the API key already available in the environment.
+2. Inside generate_ai_analysis():
+   -Take the prepared prompt
+   -Send this prompt to the AI model
+3. Get the response from AI: Extract the text result returned by AI
+4. Print: 
+   -"Sending data to AI..."
+   -"AI response received"
+5. Return:The AI-generated text
+6. Update main.py: Print the AI response clearly
+
+7. Add simple safety:
+   - If something goes wrong → print "AI request failed"
+Ensure:
+- API is actually called
+- Response is returned as string
+- Output is readable
+
+EXPECTED OUTPUT
+-Running 'python main.py' prints selected scan mode 
+-Displays AI-generated analysis text and show scan → load → parse → baseline → prepare AI input → AI call
