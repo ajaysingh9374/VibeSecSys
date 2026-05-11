@@ -1,0 +1,50 @@
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Build a working cybersecurity application
+-Development method: PROMPTS → CODEX BUILDS → we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE
+-Stage: 2 — Scan Acquisition, XML Handling & Baseline Analysis
+-Step: 2.3 — XML loader
+
+SAVE PROMPT and UPDATE DOCUMENTATION (Important)
+- Save as: prompts/stage2-step3-xml-loader.txt
+
+RULES (STRICT): Only follow what is required in this step
+
+TASK: Create XML loading functionality.
+Requirements:
+1. Create file: scanner/xml_loader.py
+2. Add function:
+   def load_xml(xml_file_path: str):
+       return xml_content
+3. Function behaviour:
+   -Accept file path as input
+   -Open and read XML file content
+   -Return the raw XML content (string)
+4. Print:
+   -"Loading XML from: <path>"
+   -"XML loaded successfully"
+5. Add minimal error handling:
+   -If file not found → print "Error: XML file not found"
+   -Stop execution
+6. Update main.py:
+   -After scan completes: call load_xml(xml_path), print confirmation message
+7. Ensure:
+   -Code runs without error
+   -XML file content is successfully loaded
+
+EXPECTED OUTPUT
+-Running 'python main.py' prints selected scan mode
+

@@ -4,6 +4,7 @@
 # Co-development: CodeX + K2509118
 
 from scanner.scan_runner import run_localhost_scan, select_scan_mode
+from scanner.xml_loader import load_xml
 
 
 def main():
@@ -14,6 +15,8 @@ def main():
     if selected_mode == "localhost":
         xml_file_path = run_localhost_scan()
         print(f"Generated XML path: {xml_file_path}")
+        xml_content = load_xml(xml_file_path)
+        print("XML content loaded into application")
 
 
 if __name__ == "__main__":
