@@ -1,0 +1,46 @@
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Build a working cybersecurity application
+-Development method: PROMPTS -> CODEX BUILDS -> we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE
+-Stage: 2 - Scan Acquisition, XML Handling & Baseline Analysis
+-Step: 2.1 - Define scan mode selector
+
+SAVE PROMPT (Important)
+-Save as: prompts/stage2-step1-scan-mode-selector.txt
+
+RULES (STRICT): Only follow what is required in this step
+
+TASK: Create scan mode selection logic.
+Requirements:
+1. Define supported scan modes:
+   -"localhost"
+   -"network"
+   -"xml"
+2. Create a function inside scanner/scan_runner.py:
+   def select_scan_mode():
+       return selected_mode
+3. For now (this is temporary logic and later change as project forwards):
+   -Hardcode the mode to "localhost"
+   -Print:"Scan mode selected: localhost"
+4. Update main.py:
+   -Import and call select_scan_mode()
+   -Print the returned mode
+5. Ensure:
+   -Code runs without error
+   -Output clearly shows selected mode
+
+EXPECTED OUTPUT
+-Running 'python main.py' prints selected scan mode
