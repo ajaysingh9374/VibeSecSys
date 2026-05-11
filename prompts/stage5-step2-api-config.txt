@@ -16,7 +16,7 @@ main.py      : Entry point
 
 CURRENT STAGE
 -Stage: 5 — AI Integration
--Step: 5.1 — AI module setup
+-Step: 5.2 — API configuration
 
 SAVE PROMPT and UPDATE DOCUMENTATION (Important)
 -Save as: prompts/stage5-step2-api-config.txt
@@ -29,7 +29,6 @@ Requirements:
 1. In ai/ai_engine.py:
    -Import os module
    -Access API key using: os.getenv("OPENAI_API_KEY")
-
 2. Inside generate_ai_analysis() (temporary check):
    -Check if API key exists
    IF present:
