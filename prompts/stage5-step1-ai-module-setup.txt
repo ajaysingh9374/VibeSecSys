@@ -1,0 +1,47 @@
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Build a working cybersecurity application
+-Development method: PROMPTS → CODEX BUILDS → we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE
+-Stage: 5 — AI Integration
+-Step: 5.1 — AI module setup
+
+SAVE PROMPT and UPDATE DOCUMENTATION (Important)
+-Save as: prompts/stage5-step1-ai-module-setup.txt
+
+RULES (STRICT): Only follow what is required in this step
+
+TASK: Create the AI engine module structure.
+Requirements:
+1. Create file: ai/ai_engine.py
+2. Add function:
+   def generate_ai_analysis(ai_input: str):
+       return analysis_result
+3. Function behaviour (for now):
+   -Accept prepared AI input (string from Stage 4)
+   -Print:"AI module initialized"
+   -Return a placeholder string: "AI analysis placeholder"
+4. Update main.py:
+   -After AI input preparation:
+       call generate_ai_analysis(ai_input)
+       print returned result
+5. Ensure:
+   -Code runs without error
+   -Placeholder output appears in terminal
+
+EXPECTED OUTPUT
+-Running 'python main.py' prints selected scan mode 
+  shows full flow: scan → load → parse → baseline → prepare AI input → AI module
+-Displays placeholder AI analysis result

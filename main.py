@@ -3,6 +3,7 @@
 # Execution: Strict step-by-step execution
 # Co-development: CodeX + K2509118
 
+from ai.ai_engine import generate_ai_analysis
 from ai.data_preparation import prepare_ai_input
 from scanner.baseline import generate_baseline
 from scanner.scan_runner import run_localhost_scan, select_scan_mode
@@ -38,6 +39,8 @@ def main():
         ai_input = prepare_ai_input(parsed_data, baseline_summary)
         print("AI input prepared for next stage")
         print(ai_input)
+        analysis_result = generate_ai_analysis(ai_input)
+        print(f"AI analysis result: {analysis_result}")
 
 
 if __name__ == "__main__":

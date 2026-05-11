@@ -43,6 +43,7 @@ Requirements:
        call prepare_ai_input(parsed_data, baseline_data)
        print confirmation
 7. Ensure: Output is clean and readable, No raw XML included, No AI call
+
 EXPECTED OUTPUT
 -Running 'python main.py' prints selected scan mode 
 -Shows full flow: scan -> load -> parse -> baseline -> prepare AI input
