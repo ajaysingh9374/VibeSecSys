@@ -1,0 +1,13 @@
+VibeSecSys Stages
+
+1. Stage 1 - Core Application Skeleton
+   Description: Created the initial application entry point and verified that main.py runs successfully.
+
+2. Stage 2 - Scan Acquisition, XML Handling & Baseline Analysis
+   Description: Added scan mode selection, localhost Nmap XML generation, XML loading, XML parsing, and baseline analysis.
+
+3. Stage 3 - Baseline Analysis
+   Description: Originally planned as a separate stage, but Stage 2 Step 5 was merged into Stage 2.
+
+4. Stage 4 - Data Structuring for AI
+   Description: Next stage. Prepare structured scan and baseline data for later AI analysis.

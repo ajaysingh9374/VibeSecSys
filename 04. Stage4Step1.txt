@@ -1,0 +1,46 @@
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Build a working cybersecurity application
+-Development method: PROMPTS → CODEX BUILDS → we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE
+-Stage: 2 — Scan Acquisition, XML Handling & Baseline Analysis
+-Step: 2.5 — Baseline analysis
+
+SAVE PROMPT and UPDATE DOCUMENTATION (Important)
+-Save as: prompts/stage2-step5-baseline-analysis.txt
+
+RULES (STRICT): Only follow what is required in this step
+1. Create file:scanner/baseline.py
+2. Add function:
+   def generate_baseline(parsed_data):
+       return baseline_summary
+3. Function behaviour:
+   -Accept parsed data from XML parser
+   -Compute:Total number of hosts, open ports, unique running services and Prepare a simple structured summary
+4. Output structure (guideline): total hosts, total open ports, discovered services
+5. Print:
+   -"Running baseline analysis..."
+   -"Baseline analysis complete"
+6. Update main.py:
+   -After parsing:call generate_baseline(parsed_data) and print summary clearly
+7. Ensure:
+   -Safe handling if parsed_data is empty or missing expected fields
+   -Does not modify parsed data
+   -Simple and clean logic
+
+EXPECTED OUTPUT
+-Running 'python main.py' prints selected scan mode 
+  shows scan → load → parse → baseline flow
+
