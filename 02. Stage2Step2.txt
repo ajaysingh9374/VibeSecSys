@@ -1,0 +1,57 @@
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Build a working cybersecurity application
+-Development method: PROMPTS → CODEX BUILDS → we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE - Stage tracking
+-Stage: 2 — Scan Acquisition, XML Handling & Baseline Analysis
+-Step: 2.2 — XML generation via localhost scan
+
+SAVE PROMPT and UPDATE DOCUMENTATION (Important)
+- Save as: prompts/stage2-step2-localhost-xml-scan.txt
+
+RULES (STRICT): Only follow what is required in this step
+
+TASK: Implement XML generation using Nmap for localhost.
+Requirements:
+1. In scanner/scan_runner.py:
+   - Add function:
+     def run_localhost_scan():
+         return xml_file_path
+2. Function behaviour:
+   - Run Nmap scan on 127.0.0.1
+   - Use command that outputs XML format
+   - Save XML file inside:  reports/
+   - File name example: localhost_scan.xml
+3. Use Python execution method:
+   - subprocess module (preferred)
+   - Ensure command runs correctly on system
+4. Print:
+   - "Running localhost scan..."
+   - "Scan complete. XML saved to: <path>"
+5. Return:
+   - Path of generated XML file
+6. Update main.py:
+   - After selecting mode:
+     IF mode == "localhost":
+         call run_localhost_scan()
+         print returned XML path
+7. Ensure:
+   -Code runs without error (assume Nmap installed)
+   -XML file is generated in /reports
+   -Add minimal error handling: If Nmap execution fails, print a clear error message and stop execution
+
+EXPECTED OUTPUT
+-Running 'python main.py' prints selected scan mode
+
