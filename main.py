@@ -3,6 +3,7 @@
 # Execution: Strict step-by-step execution
 # Co-development: CodeX + K2509118
 
+from scanner.baseline import generate_baseline
 from scanner.scan_runner import run_localhost_scan, select_scan_mode
 from scanner.xml_loader import load_xml
 from scanner.xml_parser import parse_xml
@@ -27,6 +28,12 @@ def main():
                 print(
                     f"Port: {port['port']} | Service: {port['service']} | State: {port['state']}"
                 )
+
+        baseline_summary = generate_baseline(parsed_data)
+        print("Baseline summary:")
+        print(f"Total hosts: {baseline_summary['total_hosts']}")
+        print(f"Total open ports: {baseline_summary['total_open_ports']}")
+        print(f"Discovered services: {', '.join(baseline_summary['discovered_services'])}")
 
 
 if __name__ == "__main__":
