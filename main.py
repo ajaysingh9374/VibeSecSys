@@ -5,6 +5,7 @@
 
 from scanner.scan_runner import run_localhost_scan, select_scan_mode
 from scanner.xml_loader import load_xml
+from scanner.xml_parser import parse_xml
 
 
 def main():
@@ -17,6 +18,15 @@ def main():
         print(f"Generated XML path: {xml_file_path}")
         xml_content = load_xml(xml_file_path)
         print("XML content loaded into application")
+        parsed_data = parse_xml(xml_content)
+        print("Parsed scan summary:")
+        for host in parsed_data:
+            print(f"Host: {host['ip_address']}")
+            print(f"Ports found: {len(host['ports'])}")
+            for port in host["ports"]:
+                print(
+                    f"Port: {port['port']} | Service: {port['service']} | State: {port['state']}"
+                )
 
 
 if __name__ == "__main__":

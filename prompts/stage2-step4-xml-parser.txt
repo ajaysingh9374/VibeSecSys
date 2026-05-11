@@ -1,0 +1,54 @@
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Build a working cybersecurity application
+-Development method: PROMPTS → CODEX BUILDS → we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE
+-Stage: 2 — Scan Acquisition, XML Handling & Baseline Analysis
+-Step: 2.4 — XML parsing
+
+SAVE PROMPT and UPDATE DOCUMENTATION (Important)
+- Save as: prompts/stage2-step4-xml-parser.txt
+
+RULES (STRICT): Only follow what is required in this step
+
+TASK: Parse the loaded XML into structured Python data.
+Requirements:
+1. Create file: scanner/xml_parser.py
+2. Add function:
+   def parse_xml(xml_content: str):
+       return parsed_data
+3. Function behaviour:
+   - Accept raw XML string (from loader)
+   - Parse XML using Python XML library (ElementTree)
+   - Extract:
+       - IP address (host)
+       - Ports
+       - Service names
+       - State (open/closed)
+4. Output structure: for guideline like Hosts, Port, Service, State. these items list is for reference only and not hardline.
+5. Print:
+   -"Parsing XML data..."
+   -"XML parsing complete"
+6. Update main.py:
+   - After loading XML:
+       call parse_xml(xml_content)
+       print confirmation + parsed summary
+7. Ensure:
+   - Code runs without error
+   - Output structure is consistent (even if few/no ports)
+
+EXPECTED OUTPUT
+-Running 'python main.py' prints selected scan mode
+
