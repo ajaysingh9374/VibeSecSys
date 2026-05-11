@@ -5,6 +5,7 @@
 
 from ai.ai_engine import generate_ai_analysis
 from ai.data_preparation import prepare_ai_input
+from reporting.report_generator import generate_report
 from scanner.baseline import generate_baseline
 from scanner.scan_runner import run_localhost_scan, select_scan_mode
 from scanner.xml_loader import load_xml
@@ -42,6 +43,9 @@ def main():
         ai_result = generate_ai_analysis(ai_input)
         print("AI response:")
         print(ai_result)
+        report_content = generate_report(ai_result)
+        print("Report preview:")
+        print(report_content)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,56 @@
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Build a working cybersecurity application
+-Development method: PROMPTS → CODEX BUILDS → we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE
+-Stage: 6 — Report Generation
+-Step: 6.1 — Markdown report creation
+
+SAVE PROMPT and UPDATE DOCUMENTATION (Important)
+-Save as: prompts/stage6-step1-markdown-report.txt
+
+RULES (STRICT): Only follow what is required in this step
+Additional Rules : Do NOT modify earlier stages, prompt content or add report formating yet
+
+TASK: Create a structured Markdown report from AI output.
+
+Requirements:
+1. Create file: reporting/report_generator.py
+2. Add function: 
+   def generate_report(ai_output: str):
+       return report_content
+3. Function behaviour:
+   Convert AI text into Markdown format with sections:
+   -# VibeSecSys Security Report
+   -## Summary of Findings
+   -## Risks Identified
+   -## Misconfigurations
+   -## Recommendations
+4. Use AI output as input:
+   -Map content into sections if clearly separable
+   -If not → include full AI output under sections
+5. Ensure:
+   -Clean Markdown formatting (#, ##, bullet points)
+   -Readable and structured output
+6. Print:
+   -"Generating report..."
+   -"Report generation complete"
+7. Update main.py:
+   -Call generate_report(ai_result)
+   -Print report preview
+
+EXPECTED OUTPUT
+- Running `python main.py`
+  Displays structured Markdown report
