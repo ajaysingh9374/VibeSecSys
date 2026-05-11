@@ -39,9 +39,9 @@ def main():
         ai_input = prepare_ai_input(parsed_data, baseline_summary)
         print("AI input prepared for next stage")
         print(ai_input)
-        ai_response = generate_ai_analysis(ai_input)
+        ai_result = generate_ai_analysis(ai_input)
         print("AI response:")
-        print(ai_response)
+        print(ai_result)
 
 
 if __name__ == "__main__":

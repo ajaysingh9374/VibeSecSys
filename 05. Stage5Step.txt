@@ -1,0 +1,45 @@
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Build a working cybersecurity application
+-Development method: PROMPTS → CODEX BUILDS → we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE
+-Stage: 5 — AI Integration
+-Step: 5.5 — Response handling
+
+SAVE PROMPT and UPDATE DOCUMENTATION (Important)
+-Save as: prompts/stage5-step5-response-handling.txt
+
+RULES (STRICT): Only follow what is required in this step
+Additional Rules : Do NOT modify earlier stages, prompt content or add report formating yet, no markdown formatting
+
+
+TASK: Clean and standardise the AI response.
+
+Requirements:
+1. In ai/ai_engine.py:
+   After receiving AI response:
+   -Ensure only the clean text is returned
+   -Remove any extra metadata, objects, or formatting issues
+2. Ensure output is:Plain readable text, No raw API structure, No debug info.
+3. Keep:
+   return cleaned_ai_text
+4. Print: "AI response processed"
+5. Update main.py: Print cleaned output clearly
+6. Ensure:
+   - Output is readable and ready for report generation
+
+EXPECTED OUTPUT
+- Running `python main.py` shows clean AI report text
+- No extra JSON or API wrapper data
