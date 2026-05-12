@@ -1,0 +1,62 @@
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Build a working cybersecurity application
+-Development method: PROMPTS → CODEX BUILDS → we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE
+-Stage: 8 — CLI Integration
+
+SAVE PROMPT and UPDATE DOCUMENTATION (Important)
+-Save as: prompts/stage8-cli.txt
+
+RULES (STRICT): Only follow what is required in this step
+Additional Rules : Do NOT modify earlier stages, prompt content, processing pipeline or add report formating yet
+
+TASK: Add command-line interface support for input and output.
+
+Requirements:
+1. In main.py:
+   - Use argparse library
+2. Add two arguments:
+   --input
+   - Optional
+   - Path to XML file
+   - If provided → use XML mode
+
+   --output
+   - Optional
+   - Path to save report file
+   - Default → reports/report.md
+
+3. Logic:
+   IF --input provided:
+       Skip localhost scan
+       Load XML from provided file
+   ELSE:
+       Run default localhost scan
+4. Pass output path to:
+   save_report()
+5. Update save_report():
+   -Accept optional file path parameter
+   -Use it instead of fixed "reports/report.md"
+6. Print:
+   -Selected input mode
+   -Output file location
+7. Ensure:
+   Final command works:
+   python main.py --input samples/test.xml --output reports/output.md
+
+EXPECTED OUTPUT
+Running commands like: python main.py
+python main.py --input samples/test.xml --output reports/custom.md

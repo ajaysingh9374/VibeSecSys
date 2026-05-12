@@ -3,6 +3,9 @@
 # Execution: Strict step-by-step execution
 # Co-development: CodeX + K2509118
 
+import argparse
+import os
+
 from ai.ai_engine import generate_ai_analysis
 from ai.data_preparation import prepare_ai_input
 from reporting.file_writer import save_report
@@ -14,41 +17,62 @@ from scanner.xml_parser import parse_xml
 
 
 def main():
-    print("HELLO WORLD")
-    selected_mode = select_scan_mode()
-    print(f"Returned scan mode: {selected_mode}")
+    parser = argparse.ArgumentParser(description="VibeSecSys cybersecurity scan analyzer")
+    parser.add_argument("--input", help="Path to XML file", required=False)
+    parser.add_argument(
+        "--output",
+        help="Path to save report file",
+        default="reports/report.md",
+        required=False,
+    )
+    args = parser.parse_args()
 
-    if selected_mode == "localhost":
+    print("HELLO WORLD")
+
+    if args.input:
+        selected_mode = "xml"
+        print("Selected input mode: xml")
+        if not os.path.isfile(args.input):
+            print(f"Error: Input XML file not found: {args.input}")
+            raise SystemExit(1)
+        xml_file_path = args.input
+        print(f"Using input XML file: {xml_file_path}")
+    else:
+        selected_mode = select_scan_mode()
+        print("Selected input mode: localhost")
+        print(f"Returned scan mode: {selected_mode}")
         xml_file_path = run_localhost_scan()
         print(f"Generated XML path: {xml_file_path}")
-        xml_content = load_xml(xml_file_path)
-        print("XML content loaded into application")
-        parsed_data = parse_xml(xml_content)
-        print("Parsed scan summary:")
-        for host in parsed_data:
-            print(f"Host: {host['ip_address']}")
-            print(f"Ports found: {len(host['ports'])}")
-            for port in host["ports"]:
-                print(
-                    f"Port: {port['port']} | Service: {port['service']} | State: {port['state']}"
-                )
 
-        baseline_summary = generate_baseline(parsed_data)
-        print("Baseline summary:")
-        print(f"Total hosts: {baseline_summary['total_hosts']}")
-        print(f"Total open ports: {baseline_summary['total_open_ports']}")
-        print(f"Discovered services: {', '.join(baseline_summary['discovered_services'])}")
-        ai_input = prepare_ai_input(parsed_data, baseline_summary)
-        print("AI input prepared for next stage")
-        print(ai_input)
-        ai_result = generate_ai_analysis(ai_input)
-        print("AI response:")
-        print(ai_result)
-        report_content = generate_report(ai_result)
-        print("Report preview:")
-        print(report_content)
-        report_file_path = save_report(report_content)
-        print(f"Report saved to: {report_file_path}")
+    print(f"Output file location: {args.output}")
+    xml_content = load_xml(xml_file_path)
+    print("XML content loaded into application")
+    parsed_data = parse_xml(xml_content)
+    print("Parsed scan summary:")
+    for host in parsed_data:
+        print(f"Host: {host['ip_address']}")
+        print(f"Ports found: {len(host['ports'])}")
+        for port in host["ports"]:
+            print(
+                f"Port: {port['port']} | Service: {port['service']} | State: {port['state']}"
+            )
+
+    baseline_summary = generate_baseline(parsed_data)
+    print("Baseline summary:")
+    print(f"Total hosts: {baseline_summary['total_hosts']}")
+    print(f"Total open ports: {baseline_summary['total_open_ports']}")
+    print(f"Discovered services: {', '.join(baseline_summary['discovered_services'])}")
+    ai_input = prepare_ai_input(parsed_data, baseline_summary)
+    print("AI input prepared for next stage")
+    print(ai_input)
+    ai_result = generate_ai_analysis(ai_input)
+    print("AI response:")
+    print(ai_result)
+    report_content = generate_report(ai_result)
+    print("Report preview:")
+    print(report_content)
+    report_file_path = save_report(report_content, args.output)
+    print(f"Report saved to: {report_file_path}")
 
 
 if __name__ == "__main__":
