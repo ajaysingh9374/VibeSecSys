@@ -1,0 +1,48 @@
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Build a working cybersecurity application
+-Development method: PROMPTS → CODEX BUILDS → we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE
+-Stage: 7 — File Output
+
+SAVE PROMPT and UPDATE DOCUMENTATION (Important)
+-Save as: prompts/stage7-file-output.txt
+
+RULES (STRICT): Only follow what is required in this step
+Additional Rules : Do NOT modify earlier stages, prompt content or add report formating yet
+
+TASK: Save the generated Markdown report into a file.
+
+Requirements:
+1. Create file:reporting/file_writer.py
+2. Add function:
+   def save_report(report_content: str):
+       return file_path
+3. Function behaviour:
+   -Save report_content into a file inside: reports/
+   -File name: report.md
+4. Print:
+   - "Saving report to file..."
+   - "Report saved successfully"
+5. Return: Path of saved file (e.g., reports/report.md)
+6. Update main.py:
+   -After report generation: call save_report(report_content) and print file path
+7. Ensure:
+   - reports/ folder is used
+   - File is created/overwritten safely
+   - No errors during write
+
+EXPECTED OUTPUT
+- Running 'python main.py'  shows full pipeline including: report generation → file saving

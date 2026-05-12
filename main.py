@@ -5,6 +5,7 @@
 
 from ai.ai_engine import generate_ai_analysis
 from ai.data_preparation import prepare_ai_input
+from reporting.file_writer import save_report
 from reporting.report_generator import generate_report
 from scanner.baseline import generate_baseline
 from scanner.scan_runner import run_localhost_scan, select_scan_mode
@@ -46,6 +47,8 @@ def main():
         report_content = generate_report(ai_result)
         print("Report preview:")
         print(report_content)
+        report_file_path = save_report(report_content)
+        print(f"Report saved to: {report_file_path}")
 
 
 if __name__ == "__main__":
