@@ -1,0 +1,50 @@
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Produce professional cybersecurity report
+-Development method: PROMPTS → CODEX BUILDS → we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+/ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE
+-Stage: Stage: 10 - OCTAVE + STRIDE Report
+
+SAVE PROMPT and UPDATE DOCUMENTATION (Important)
+-Save as: prompts/stage10-executive-summary.txt
+
+RULES (STRICT): Only follow what is required in this step
+Additional Rules : Do NOT modify earlier stages, prompt content, processing pipeline or add report formating yet
+
+RULES TO FOLLOW:
+-Write professionally (Very High Standard Report)
+-Do NOT be casual
+-Do NOT include implementation code
+-Use formal cybersecurity tone
+-Keep it concise but informative
+
+INPUT DATA
+-Use the generated report file located in: reports/Vibe.md
+-This file contains the analysed scan output
+
+TASK: Generate OCTAVE and STRIDE analysis based on the provided report file.
+
+Requirements:
+1. --input
+  Use the generated report file : reports/Vibe.md
+2. Perform OCTAVE Based report like Identify key assets, Identify threats scenarios (threat modeling), Describe potential impact, etc
+--octave
+3. Perform STRIDE analysis - Cover all categories and include impact and mitigation 
+--stride
+ For each: threat example, impact, mitigation
+4. Write in professional cybersecurity report style
+
+EXPECTED OUTPUT
+Provide structured, very high quality professional report-style output
