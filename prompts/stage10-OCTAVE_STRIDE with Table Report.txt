@@ -1,0 +1,49 @@
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Produce professional cybersecurity report
+-Development method: PROMPTS → CODEX BUILDS → we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+/ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE
+-Stage: Stage: 10 - OCTAVE + STRIDE Report
+
+SAVE PROMPT and UPDATE DOCUMENTATION (Important)
+-Save as: prompts/stage10-OCTAVE_STRIDE with Table Report.txt
+
+RULES (STRICT): Only follow what is required in this step
+Additional Rules : Do NOT modify earlier stages, prompt content, processing pipeline or add report formating yet
+
+RULES TO FOLLOW:
+-Generate and Write professionally Report(Very High Standard Report)
+-Do NOT be casual
+-Do NOT include implementation code
+-Use formal cybersecurity tone
+-Keep it concise but informative
+-Do NOT add CLI features
+-Do NOT modify application code
+
+TASK: Generate OCTAVE and STRIDE analysis based on the provided report file.
+Use AI to produce professional OCTAVE and STRIDE analysis from the provided report file as a one-time document generation step.
+
+Requirements:
+1. Use the generated report file : reports/new_report.md (already available)
+2. Perform OCTAVE Based report like Identify key assets, Identify threats scenarios (threat modeling), Describe potential impact, etc
+  Include an OCTAVE summary table with columns like Category, Details etc in etc in a nice format. Populate the table based on findings from the provided report, ensuring it reflects actual assets,    threats, impacts, and risk priorities derived from the input data.
+3. Perform STRIDE analysis - Cover all categories and include impact and mitigation. For each: threat example, impact, mitigation
+Include a STRIDE Threat Model table with columns like Category, Threat Example, Impact Mitigation, etc in a nice format
+4. Write in professional cybersecurity report style
+5. Tables should summarise the analysis, not replace the descriptive sections.
+
+EXPECTED OUTPUT
+Provide structured, very high quality professional report-style output
+-Save the output as:docs/octave_stride_report_2.md
