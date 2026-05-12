@@ -1,0 +1,43 @@
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Build a working cybersecurity application
+-Development method: PROMPTS → CODEX BUILDS → we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE
+-Stage: Stage: 9 — Testing
+
+SAVE PROMPT and UPDATE DOCUMENTATION (Important)
+-Save as: prompts/stage9-testing.txt
+
+RULES (STRICT): Only follow what is required in this step
+Additional Rules : Do NOT modify earlier stages, prompt content, processing pipeline or add report formating yet
+
+TASK: Test the full application pipeline in different scenarios.
+
+Requirements:
+1. Run default execution:python main.py
+   Verify:Localhost scan runs, Report is generated, File saved to reports/report_localhost.md
+2. Run XML input mode:
+   python main.py --input samples/Vibe.xml --output reports/<XMLFileName>.md
+   Verify:Nmap scan is skipped, XML is loaded, Report is generated, File saved to reports/<XMLFileName>.md
+3. Test invalid input:
+   python main.py --input samples/missing.xml
+   Verify:Proper error message displayed, Stop execution cleanly, No crash situation
+4. Verify output files:Open generated report files, Confirm - Markdown structure is valid, AI content/analysis exists and file is not empty. Print proper message. 
+5. Print summary of all tests indicating Passed or Failed.
+6. Ensure:No runtime errors,Full pipeline stable, CLI works as expected
+
+EXPECTED OUTPUT
+Running commands like: python main.py
+CLI behavior tested and verified
