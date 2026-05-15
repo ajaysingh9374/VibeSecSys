@@ -1,0 +1,913 @@
+﻿
+==================================================
+FILE: stage1-step1-project-start_checks.txt
+==================================================
+
+PROJECT CONTEXT (Remain same for whole project/application)
+-Project: VibeSecSys
+-Goal: Build a working cybersecurity application
+-Strict step-by-step execution
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+ai/          : AI integration module
+src/         : Shared utilities (if needed later)
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE - Stage tracking.
+-Stage: 1 Core Application Skeleton
+-Step: 1.1 Project structure and main entry
+
+SAVE PROMPTS (Important)
+-Save as: prompts/stage1-step1-project-start_checks.txt
+
+RULES (STRICT): Only follow what is required in this step
+TASK - Requirements:
+1. Ensure 'main.py' is a valid entry point.
+2. develop 'main.py' to Print HELLO WORLD. Add Project Context as comment in main.py. 
+3. check if main.py is executeable in open terminal.
+4. List which directory need initialization
+
+EXPECTED OUTPUT
+- Running 'python main.py' works without error
+
+
+
+
+==================================================
+FILE: stage10-OCTAVE_STRIDE Report.txt
+==================================================
+
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Produce professional cybersecurity report
+-Development method: PROMPTS  --> CODEX BUILDS  --> we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+/ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE
+-Stage: Stage: 10 - OCTAVE + STRIDE Report
+
+SAVE PROMPT and UPDATE DOCUMENTATION (Important)
+-Save as: prompts/stage10-OCTAVE_STRIDE Report.txt
+
+RULES (STRICT): Only follow what is required in this step
+Additional Rules : Do NOT modify earlier stages, prompt content, processing pipeline or add report formating yet
+
+RULES TO FOLLOW:
+-Generate and Write professionally Report(Very High Standard Report)
+-Do NOT be casual
+-Do NOT include implementation code
+-Use formal cybersecurity tone
+-Keep it concise but informative
+-Do NOT add CLI features
+-Do NOT modify application code
+
+INPUT DATA
+-Use the generated report file located in: reports/Vibe.md
+-This file contains the analysed scan output
+
+TASK: Generate OCTAVE and STRIDE analysis based on the provided report file.
+Use AI to produce professional OCTAVE and STRIDE analysis from the provided report file as a one-time document generation step.
+
+Use AI to generate a formal OCTAVE and STRIDE report from the provided report content as a one-time document generation step
+
+Requirements:
+1. Use the generated report file : reports/Vibe.md
+2. Perform OCTAVE Based report like Identify key assets, Identify threats scenarios (threat modeling), Describe potential impact, etc
+3. Perform STRIDE analysis - Cover all categories and include impact and mitigation. For each: threat example, impact, mitigation
+4. Write in professional cybersecurity report style
+
+EXPECTED OUTPUT
+Provide structured, very high quality professional report-style output
+-Save the output as:docs/octave_stride_report.md
+
+
+
+==================================================
+FILE: stage10-OCTAVE_STRIDE with Table Report.txt
+==================================================
+
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Produce professional cybersecurity report
+-Development method: PROMPTS  --> CODEX BUILDS  --> we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+/ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE
+-Stage: Stage: 10 - OCTAVE + STRIDE Report
+
+SAVE PROMPT and UPDATE DOCUMENTATION (Important)
+-Save as: prompts/stage10-OCTAVE_STRIDE with Table Report.txt
+
+RULES (STRICT): Only follow what is required in this step
+Additional Rules : Do NOT modify earlier stages, prompt content, processing pipeline or add report formating yet
+
+RULES TO FOLLOW:
+-Generate and Write professionally Report(Very High Standard Report)
+-Do NOT be casual
+-Do NOT include implementation code
+-Use formal cybersecurity tone
+-Keep it concise but informative
+-Do NOT add CLI features
+-Do NOT modify application code
+
+TASK: Generate OCTAVE and STRIDE analysis based on the provided report file.
+Use AI to produce professional OCTAVE and STRIDE analysis from the provided report file as a one-time document generation step.
+
+Requirements:
+1. Use the generated report file : reports/new_report.md (already available)
+2. Perform OCTAVE Based report like Identify key assets, Identify threats scenarios (threat modeling), Describe potential impact, etc
+  Include an OCTAVE summary table with columns like Category, Details etc in etc in a nice format. Populate the table based on findings from the provided report, ensuring it reflects actual assets,    threats, impacts, and risk priorities derived from the input data.
+3. Perform STRIDE analysis - Cover all categories and include impact and mitigation. For each: threat example, impact, mitigation
+Include a STRIDE Threat Model table with columns like Category, Threat Example, Impact Mitigation, etc in a nice format
+4. Write in professional cybersecurity report style
+5. Tables should summarise the analysis, not replace the descriptive sections.
+
+EXPECTED OUTPUT
+Provide structured, very high quality professional report-style output
+-Save the output as:docs/octave_stride_report_2.md
+
+
+
+==================================================
+FILE: stage2-step1-scan-mode-selector.txt
+==================================================
+
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Build a working cybersecurity application
+-Development method: PROMPTS -> CODEX BUILDS -> we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE
+-Stage: 2 - Scan Acquisition, XML Handling & Baseline Analysis
+-Step: 2.1 - Define scan mode selector
+
+SAVE PROMPT (Important)
+-Save as: prompts/stage2-step1-scan-mode-selector.txt
+
+RULES (STRICT): Only follow what is required in this step
+
+TASK: Create scan mode selection logic.
+Requirements:
+1. Define supported scan modes:
+   -"localhost"
+   -"network"
+   -"xml"
+2. Create a function inside scanner/scan_runner.py:
+   def select_scan_mode():
+       return selected_mode
+3. For now (this is temporary logic and later change as project forwards):
+   -Hardcode the mode to "localhost"
+   -Print:"Scan mode selected: localhost"
+4. Update main.py:
+   -Import and call select_scan_mode()
+   -Print the returned mode
+5. Ensure:
+   -Code runs without error
+   -Output clearly shows selected mode
+
+EXPECTED OUTPUT
+-Running 'python main.py' prints selected scan mode
+
+
+
+
+==================================================
+FILE: stage2-step2-localhost-xml-scan.txt
+==================================================
+
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Build a working cybersecurity application
+-Development method: PROMPTS  --> CODEX BUILDS  --> we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE - Stage tracking
+-Stage: 2   Scan Acquisition, XML Handling & Baseline Analysis
+-Step: 2.2   XML generation via localhost scan
+
+SAVE PROMPT and UPDATE DOCUMENTATION (Important)
+- Save as: prompts/stage2-step2-localhost-xml-scan.txt
+
+RULES (STRICT): Only follow what is required in this step
+
+TASK: Implement XML generation using Nmap for localhost.
+Requirements:
+1. In scanner/scan_runner.py:
+   - Add function:
+     def run_localhost_scan():
+         return xml_file_path
+2. Function behaviour:
+   - Run Nmap scan on 127.0.0.1
+   - Use command that outputs XML format
+   - Save XML file inside:  reports/
+   - File name example: localhost_scan.xml
+3. Use Python execution method:
+   - subprocess module (preferred)
+   - Ensure command runs correctly on system
+4. Print:
+   - "Running localhost scan..."
+   - "Scan complete. XML saved to: <path>"
+5. Return:
+   - Path of generated XML file
+6. Update main.py:
+   - After selecting mode:
+     IF mode == "localhost":
+         call run_localhost_scan()
+         print returned XML path
+7. Ensure:
+   -Code runs without error (assume Nmap installed)
+   -XML file is generated in /reports
+   -Add minimal error handling: If Nmap execution fails, print a clear error message and stop execution
+
+EXPECTED OUTPUT
+-Running 'python main.py' prints selected scan mode
+
+
+
+
+
+==================================================
+FILE: stage2-step3-xml-loader.txt
+==================================================
+
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Build a working cybersecurity application
+-Development method: PROMPTS  --> CODEX BUILDS  --> we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE
+-Stage: 2   Scan Acquisition, XML Handling & Baseline Analysis
+-Step: 2.3   XML loader
+
+SAVE PROMPT and UPDATE DOCUMENTATION (Important)
+- Save as: prompts/stage2-step3-xml-loader.txt
+
+RULES (STRICT): Only follow what is required in this step
+
+TASK: Create XML loading functionality.
+Requirements:
+1. Create file: scanner/xml_loader.py
+2. Add function:
+   def load_xml(xml_file_path: str):
+       return xml_content
+3. Function behaviour:
+   -Accept file path as input
+   -Open and read XML file content
+   -Return the raw XML content (string)
+4. Print:
+   -"Loading XML from: <path>"
+   -"XML loaded successfully"
+5. Add minimal error handling:
+   -If file not found  --> print "Error: XML file not found"
+   -Stop execution
+6. Update main.py:
+   -After scan completes: call load_xml(xml_path), print confirmation message
+7. Ensure:
+   -Code runs without error
+   -XML file content is successfully loaded
+
+EXPECTED OUTPUT
+-Running 'python main.py' prints selected scan mode
+
+
+
+
+
+==================================================
+FILE: stage2-step4-xml-parser.txt
+==================================================
+
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Build a working cybersecurity application
+-Development method: PROMPTS  --> CODEX BUILDS  --> we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE
+-Stage: 2   Scan Acquisition, XML Handling & Baseline Analysis
+-Step: 2.4   XML parsing
+
+SAVE PROMPT and UPDATE DOCUMENTATION (Important)
+- Save as: prompts/stage2-step4-xml-parser.txt
+
+RULES (STRICT): Only follow what is required in this step
+
+TASK: Parse the loaded XML into structured Python data.
+Requirements:
+1. Create file: scanner/xml_parser.py
+2. Add function:
+   def parse_xml(xml_content: str):
+       return parsed_data
+3. Function behaviour:
+   - Accept raw XML string (from loader)
+   - Parse XML using Python XML library (ElementTree)
+   - Extract:
+       - IP address (host)
+       - Ports
+       - Service names
+       - State (open/closed)
+4. Output structure: for guideline like Hosts, Port, Service, State. these items list is for reference only and not hardline.
+5. Print:
+   -"Parsing XML data..."
+   -"XML parsing complete"
+6. Update main.py:
+   - After loading XML:
+       call parse_xml(xml_content)
+       print confirmation + parsed summary
+7. Ensure:
+   - Code runs without error
+   - Output structure is consistent (even if few/no ports)
+
+EXPECTED OUTPUT
+-Running 'python main.py' prints selected scan mode
+
+
+
+
+
+==================================================
+FILE: stage2-step5-baseline-analysis.txt
+==================================================
+
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Build a working cybersecurity application
+-Development method: PROMPTS  --> CODEX BUILDS  --> we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE
+-Stage: 2   Scan Acquisition, XML Handling & Baseline Analysis
+-Step: 2.5   Baseline analysis
+
+SAVE PROMPT and UPDATE DOCUMENTATION (Important)
+-Save as: prompts/stage2-step5-baseline-analysis.txt
+
+RULES (STRICT): Only follow what is required in this step
+1. Create file:scanner/baseline.py
+2. Add function:
+   def generate_baseline(parsed_data):
+       return baseline_summary
+3. Function behaviour:
+   -Accept parsed data from XML parser
+   -Compute:Total number of hosts, open ports, unique running services and Prepare a simple structured summary
+4. Output structure (guideline): total hosts, total open ports, discovered services
+5. Print:
+   -"Running baseline analysis..."
+   -"Baseline analysis complete"
+6. Update main.py:
+   -After parsing:call generate_baseline(parsed_data) and print summary clearly
+7. Ensure:
+   -Safe handling if parsed_data is empty or missing expected fields
+   -Does not modify parsed data
+   -Simple and clean logic
+
+EXPECTED OUTPUT
+-Running 'python main.py' prints selected scan mode 
+  shows scan  --> load  --> parse  --> baseline flow
+
+
+
+
+
+==================================================
+FILE: stage4-step1-data-structuring.txt
+==================================================
+
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Build a working cybersecurity application
+-Development method: PROMPTS  --> CODEX BUILDS  --> we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE
+-Stage: 4   Data Structuring for AI
+-Step: 4.1   Prepare structured AI input
+
+SAVE PROMPT and UPDATE DOCUMENTATION (Important)
+-Save as: prompts/stage4-step1-data-structuring.txt
+
+RULES (STRICT): Only follow what is required in this step
+
+TASK: Prepare structured data for AI consumption.
+Requirements:
+1. Create file: ai/data_preparation.py
+2. Add function:
+   def prepare_ai_input(parsed_data, baseline_data):
+       return ai_input
+3. Function behaviour:
+   -Accept:parsed_data (from XML parser) and baseline_data (from baseline analysis)
+   -Combine both into a clean, readable format
+   -Convert structured data into a text block suitable for AI input
+4. Output:
+   -Return a formatted string containing: Host details, Open ports, Services, Baseline summary
+5. Print:
+   -"Preparing data for AI analysis..."
+   -"AI input preparation complete"
+6. Update main.py:
+   -After baseline analysis:
+       call prepare_ai_input(parsed_data, baseline_data)
+       print confirmation
+7. Ensure: Output is clean and readable, No raw XML included, No AI call
+EXPECTED OUTPUT
+-Running 'python main.py' prints selected scan mode 
+-Shows full flow: scan -> load -> parse -> baseline -> prepare AI input
+-Data is converted into readable text for next stage
+
+
+
+
+
+==================================================
+FILE: stage5-step1-ai-module-setup.txt
+==================================================
+
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Build a working cybersecurity application
+-Development method: PROMPTS  --> CODEX BUILDS  --> we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE
+-Stage: 5   AI Integration
+-Step: 5.1   AI module setup
+
+SAVE PROMPT and UPDATE DOCUMENTATION (Important)
+-Save as: prompts/stage5-step1-ai-module-setup.txt
+
+RULES (STRICT): Only follow what is required in this step
+
+TASK: Create the AI engine module structure.
+Requirements:
+1. Create file: ai/ai_engine.py
+2. Add function:
+   def generate_ai_analysis(ai_input: str):
+       return analysis_result
+3. Function behaviour (for now):
+   -Accept prepared AI input (string from Stage 4)
+   -Print:"AI module initialized"
+   -Return a placeholder string: "AI analysis placeholder"
+4. Update main.py:
+   -After AI input preparation:
+       call generate_ai_analysis(ai_input)
+       print returned result
+5. Ensure:
+   -Code runs without error
+   -Placeholder output appears in terminal
+
+EXPECTED OUTPUT
+-Running 'python main.py' prints selected scan mode 
+  shows full flow: scan  --> load  --> parse  --> baseline  --> prepare AI input  --> AI module
+-Displays placeholder AI analysis result
+
+
+
+
+==================================================
+FILE: stage5-step2-api-config.txt
+==================================================
+==================================================
+FILE: stage5-step4-ai-call.txt
+==================================================
+
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Build a working cybersecurity application
+-Development method: PROMPTS  --> CODEX BUILDS  --> we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE
+-Stage: 5   AI Integration
+-Step: 5.4   AI request execution
+
+SAVE PROMPT and UPDATE DOCUMENTATION (Important)
+-Save as: prompts/stage5-step4-ai-call.txt
+
+RULES (STRICT): Only follow what is required in this step
+
+TASK: Execute AI request using OpenAI API.
+
+Requirements:
+1. Use the API key already available in the environment.
+2. Inside generate_ai_analysis():
+   -Take the prepared prompt
+   -Send this prompt to the AI model
+3. Get the response from AI: Extract the text result returned by AI
+4. Print: 
+   -"Sending data to AI..."
+   -"AI response received"
+5. Return:The AI-generated text
+6. Update main.py: Print the AI response clearly
+
+7. Add simple safety:
+   -If something goes wrong  --> print "AI request failed"
+Ensure:
+- API is actually called
+- Response is returned as string
+- Output is readable
+
+EXPECTED OUTPUT
+-Running 'python main.py' prints selected scan mode 
+-Displays AI-generated analysis text and show scan  --> load  --> parse  --> baseline  --> prepare AI input  --> AI call
+
+
+
+
+==================================================
+FILE: stage5-step5-response-handling.txt
+==================================================
+
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Build a working cybersecurity application
+-Development method: PROMPTS  --> CODEX BUILDS  --> we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE
+-Stage: 5   AI Integration
+-Step: 5.5   Response handling
+
+SAVE PROMPT and UPDATE DOCUMENTATION (Important)
+-Save as: prompts/stage5-step5-response-handling.txt
+
+RULES (STRICT): Only follow what is required in this step
+Additional Rules : Do NOT modify earlier stages, prompt content or add report formating yet, no markdown formatting
+
+
+TASK: Clean and standardise the AI response.
+
+Requirements:
+1. In ai/ai_engine.py:
+   After receiving AI response:
+   -Ensure only the clean text is returned
+   -Remove any extra metadata, objects, or formatting issues
+2. Ensure output is:Plain readable text, No raw API structure, No debug info.
+3. Keep:
+   return cleaned_ai_text
+4. Print: "AI response processed"
+5. Update main.py: Print cleaned output clearly
+6. Ensure:
+   - Output is readable and ready for report generation
+
+EXPECTED OUTPUT
+- Running 'python main.py' shows clean AI report text
+- No extra JSON or API wrapper data
+
+
+
+
+==================================================
+FILE: stage6-step1-markdown-report.txt
+==================================================
+
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Build a working cybersecurity application
+-Development method: PROMPTS  --> CODEX BUILDS  --> we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE
+-Stage: 6   Report Generation
+-Step: 6.1   Markdown report creation
+
+SAVE PROMPT and UPDATE DOCUMENTATION (Important)
+-Save as: prompts/stage6-step1-markdown-report.txt
+
+RULES (STRICT): Only follow what is required in this step
+Additional Rules : Do NOT modify earlier stages, prompt content or add report formating yet
+
+TASK: Create a structured Markdown report from AI output.
+
+Requirements:
+1. Create file: reporting/report_generator.py
+2. Add function: 
+   def generate_report(ai_output: str):
+       return report_content
+3. Function behaviour:
+   Convert AI text into Markdown format with sections:
+   -# VibeSecSys Security Report
+   -## Summary of Findings
+   -## Risks Identified
+   -## Misconfigurations
+   -## Recommendations
+4. Use AI output as input:
+   -Map content into sections if clearly separable
+   -If not  --> include full AI output under sections
+5. Ensure:
+   -Clean Markdown formatting (#, ##, bullet points)
+   -Readable and structured output
+6. Print:
+   -"Generating report..."
+   -"Report generation complete"
+7. Update main.py:
+   -Call generate_report(ai_result)
+   -Print report preview
+
+EXPECTED OUTPUT
+- Running 'python main.py'
+  Displays structured Markdown report
+
+
+
+==================================================
+FILE: stage7-file-output.txt
+==================================================
+
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Build a working cybersecurity application
+-Development method: PROMPTS  --> CODEX BUILDS  --> we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE
+-Stage: 7   File Output
+
+SAVE PROMPT and UPDATE DOCUMENTATION (Important)
+-Save as: prompts/stage7-file-output.txt
+
+RULES (STRICT): Only follow what is required in this step
+Additional Rules : Do NOT modify earlier stages, prompt content or add report formating yet
+
+TASK: Save the generated Markdown report into a file.
+
+Requirements:
+1. Create file:reporting/file_writer.py
+2. Add function:
+   def save_report(report_content: str):
+       return file_path
+3. Function behaviour:
+   -Save report_content into a file inside: reports/
+   -File name: report.md
+4. Print:
+   - "Saving report to file..."
+   - "Report saved successfully"
+5. Return: Path of saved file (e.g., reports/report.md)
+6. Update main.py:
+   -After report generation: call save_report(report_content) and print file path
+7. Ensure:
+   - reports/ folder is used
+   - File is created/overwritten safely
+   - No errors during write
+
+EXPECTED OUTPUT
+- Running 'python main.py'  shows full pipeline including: report generation  --> file saving
+
+
+
+==================================================
+FILE: stage8-cli.txt
+==================================================
+
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Build a working cybersecurity application
+-Development method: PROMPTS  --> CODEX BUILDS  --> we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE
+-Stage: 8   CLI Integration
+
+SAVE PROMPT and UPDATE DOCUMENTATION (Important)
+-Save as: prompts/stage8-cli.txt
+
+RULES (STRICT): Only follow what is required in this step
+Additional Rules : Do NOT modify earlier stages, prompt content, processing pipeline or add report formating yet
+
+TASK: Add command-line interface support for input and output.
+
+Requirements:
+1. In main.py:
+   - Use argparse library
+2. Add two arguments:
+   --input
+   - Optional
+   - Path to XML file
+   - If provided  --> use XML mode
+
+   --output
+   - Optional
+   - Path to save report file
+   - Default  --> reports/report.md
+
+3. Logic:
+   IF --input provided:
+       Skip localhost scan
+       Load XML from provided file
+   ELSE:
+       Run default localhost scan
+4. Pass output path to:
+   save_report()
+5. Update save_report():
+   -Accept optional file path parameter
+   -Use it instead of fixed "reports/report.md"
+6. Print:
+   -Selected input mode
+   -Output file location
+7. Ensure:
+   Final command works:
+   python main.py --input samples/test.xml --output reports/output.md
+
+EXPECTED OUTPUT
+Running commands like: python main.py
+python main.py --input samples/test.xml --output reports/custom.md
+
+
+
+
+==================================================
+FILE: stage9-testing.txt
+==================================================
+
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys
+-Goal: Build a working cybersecurity application
+-Development method: PROMPTS  --> CODEX BUILDS  --> we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+REPOSITORY STRUCTURE - No modification to folder structure untill specifically asked. Detail are as below
+scanner/     : XML parsing and scan handling
+samples/     : Sample Nmap XML files
+reports/     : Output reports (final stage)
+ai/          : AI integration module
+docs/        : Notes / logs
+prompts/     : Stored prompts (MANDATORY)
+main.py      : Entry point
+
+CURRENT STAGE
+-Stage: Stage: 9   Testing
+
+SAVE PROMPT and UPDATE DOCUMENTATION (Important)
+-Save as: prompts/stage9-testing.txt
+
+RULES (STRICT): Only follow what is required in this step
+Additional Rules : Do NOT modify earlier stages, prompt content, processing pipeline or add report formating yet
+
+TASK: Test the full application pipeline in different scenarios.
+
+Requirements:
+1. Run default execution:python main.py
+   Verify:Localhost scan runs, Report is generated, File saved to reports/report_localhost.md
+2. Run XML input mode:
+   python main.py --input samples/Vibe.xml --output reports/<XMLFileName>.md
+   Verify:Nmap scan is skipped, XML is loaded, Report is generated, File saved to reports/<XMLFileName>.md
+3. Test invalid input:
+   python main.py --input samples/missing.xml
+   Verify:Proper error message displayed, Stop execution cleanly, No crash situation
+4. Verify output files:Open generated report files, Confirm - Markdown structure is valid, AI content/analysis exists and file is not empty. Print proper message. 
+5. Print summary of all tests indicating Passed or Failed.
+6. Ensure:No runtime errors,Full pipeline stable, CLI works as expected
+
+EXPECTED OUTPUT
+Running commands like: python main.py
+CLI behavior tested and verified
+
+
+

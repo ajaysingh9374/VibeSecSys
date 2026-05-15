@@ -1,0 +1,51 @@
+# Cybersecurity Analysis Report
+
+## 1. Executive Summary
+{EXEC_SUMMARY}
+
+---
+
+## 2. System Overview
+- Target System: {SYSTEM}
+- Scan Source: {SCAN_SOURCE}
+
+---
+
+## 3. Vulnerability Summary
+
+| ID | Vulnerability | Severity | Impact |
+|----|--------------|----------|--------|
+{VULN_TABLE}
+
+---
+
+## 4. Detailed Findings
+
+### {VULN_NAME}
+- Description: {DESC}
+- Evidence: {EVIDENCE}
+- Impact: {IMPACT}
+- Classification: {CLASSIFICATION}
+
+{REPEAT_PER_VULN}
+
+---
+
+## 5. Risk Assessment (OCTAVE / STRIDE)
+
+| Asset | Threat | Impact | Likelihood | Risk Level |
+|------|--------|--------|------------|------------|
+{RISK_TABLE}
+
+---
+
+## 6. Mitigation Recommendations
+
+| Vulnerability | Recommendation |
+|---------------|----------------|
+{MITIGATION_TABLE}
+
+---
+
+## 7. Conclusion
+{CONCLUSION}

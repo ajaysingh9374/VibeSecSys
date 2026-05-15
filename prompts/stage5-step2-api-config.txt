@@ -1,7 +1,7 @@
 PROJECT CONTEXT (DO NOT CHANGE)
 -Project: VibeSecSys
 -Goal: Build a working cybersecurity application
--Development method: PROMPTS → CODEX BUILDS → we validate
+-Development method: PROMPTS --> CODEX BUILDS --> we validate
 -Strict step-by-step execution (NO scope jumps)
 -Co-development with CodeX + K2509118 (Myself)
 
@@ -15,8 +15,8 @@ prompts/     : Stored prompts (MANDATORY)
 main.py      : Entry point
 
 CURRENT STAGE
--Stage: 5 — AI Integration
--Step: 5.2 — API configuration
+-Stage: 5 - AI Integration
+-Step: 5.2 - API configuration
 
 SAVE PROMPT and UPDATE DOCUMENTATION (Important)
 -Save as: prompts/stage5-step2-api-config.txt
