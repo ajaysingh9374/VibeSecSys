@@ -1,0 +1,18 @@
+Using the following context:
+- Assets derived from ../Samples/VibeSecSys.xml
+- Vulnerability and severity information already identified in previous steps
+
+TASK:
+Generate the RISK_ROWS table for an OCTAVE/STRIDE-style risk assessment.
+
+FORMAT:
+| Asset ID | Threat | Impact | Likelihood | Risk Level |
+
+INSTRUCTIONS:
+- One or more rows per asset
+- Risk must reflect severity and exposure
+- Use professional risk language
+- Do NOT explain
+
+OUTPUT:
+Return ONLY RISK_ROWS.

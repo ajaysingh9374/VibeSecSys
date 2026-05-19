@@ -1,0 +1,35 @@
+Read the master report template:
+./V2.0/templates/full_report.txt
+
+You are also given the following final, validated content derived from the same XML scan:
+
+SYSTEM:
+
+SCAN_SOURCE:
+
+VULN_CLASSIFICATION_SECTION:
+
+SEVERITY_SECTION:
+
+RISK_ROWS:
+
+MITIGATION_SECTION:
+
+EXEC_SUMMARY:
+
+CONCLUSION:
+
+TASK:
+Generate the complete cybersecurity analysis report by correctly inserting the above content into the appropriate placeholders in the template.
+
+IMPORTANT:
+- Write the final report to disk as a Markdown file.
+- File path must be: ./V2.0/experiments/final_report_NEW.md
+
+STRICT RULES:
+- Follow the structure of full_report.txt exactly
+- Do NOT change wording of provided content
+- Do NOT add new findings
+- Do NOT explain
+- Do NOT generate code
+- Do NOT print the report to the terminal

@@ -1,0 +1,45 @@
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys v2.0
+-Goal: Produce professional cybersecurity report
+-Development method: PROMPTS → CODEX BUILDS → we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+CURRENT STAGE: Full Report Template Injection
+
+OBJECTIVE: Refine and Fix Tables in Report
+
+STRICT RULES:
+- Do NOT print the report
+- Do NOT generate new content
+- Do NOT explain anything
+- ONLY fix formatting and save the file
+
+TASK:
+Fix all table formatting issues in this file.
+Open the existing file: ./V2.0/experiments/final_report_NEW.md
+Each section must contain exactly one complete, properly formatted Markdown table.
+Do not split or fragment tables.
+INSTRUCTIONS:
+1. Convert ALL tables to proper Markdown table format:
+   - Use | column separators
+   - Include header row
+   - Include separator row (|---|---|)
+2. Remove any HTML table tags such as:
+   <table>, <tr>, <td>, <th>
+3. Fix improperly formatted rows such as:
+   "MIT-001 | VULN-001 | ASSET-001 ..."
+   into proper table rows.
+4. Ensure consistency:
+   - Apply Markdown tables to:
+     • Vulnerability Classification Table
+     • Severity Assessment Table
+     • Risk Assessment Table
+     • Mitigation Recommendations Table
+5. Do NOT change:
+   - wording
+   - data
+   - section order
+6. Keep structure clean and readable.
+7. Save changes back to the New file Version: ./V2.0/experiments/final_report_NEW_v2.md
+

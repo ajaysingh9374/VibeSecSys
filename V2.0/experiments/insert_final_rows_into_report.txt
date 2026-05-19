@@ -1,0 +1,32 @@
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys v2.0
+-Goal: Produce professional cybersecurity report
+-Development method: PROMPTS → CODEX BUILDS → we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+
+CURRENT STAGE: Final Report Generation
+
+OBJECTIVE:
+Use the cleaned structured rows and generate the final report by injecting them into the existing templates.
+
+STRICT OUTPUT RULES:
+- OUTPUT MUST BE ONLY PYTHON CODE
+- DO NOT explain anything
+- DO NOT change logic structure
+
+TASK:
+
+1. Take the existing template injection script
+2. Replace the placeholder row values with the following cleaned rows:
+<PASTE YOUR FINAL CLEAN ROWS HERE>
+3. Ensure the script:
+- Injects rows into template files
+- Combines all sections into the full report template
+- Writes output to:
+  ../experiments/final_report1.md
+4. Do not modify template paths or logic
+
+OUTPUT:
+Return only the updated Python script.

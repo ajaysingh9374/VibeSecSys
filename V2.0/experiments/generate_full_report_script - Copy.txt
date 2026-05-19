@@ -1,0 +1,63 @@
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys v2.0
+-Goal: Produce professional cybersecurity report
+-Development method: PROMPTS → CODEX BUILDS → we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+CURRENT STAGE: Full Report Template Injection
+
+OBJECTIVE:
+Generate a Python script that builds a complete cybersecurity report by injecting section templates into a master report template.
+
+STRICT OUTPUT RULES:
+- OUTPUT MUST BE ONLY PYTHON CODE
+- DO NOT explain anything
+- DO NOT add comments unless necessary
+- NO markdown formatting
+- NO extra text
+
+TASK:
+Generate a Python script that performs the following:
+
+1. Read template files:
+   - ../templates/vuln_classification.txt
+   - ../templates/severity_assessment.txt
+   - ../templates/mitigation_table.txt
+   - ../templates/full_report.txt
+2. Replace placeholders in section templates:
+   - {VULN_CLASSIFICATION_ROWS}
+   - {SEVERITY_ROWS}
+   - {MITIGATION_ROWS}
+3. Use this test data:
+VULN_CLASSIFICATION_ROWS:
+| web-prod | SQL Injection | OWASP A03 | Data extraction from database |
+
+SEVERITY_ROWS:
+| VULN-001 | web-prod | SQL Injection | High | Data extraction from database |
+
+MITIGATION_ROWS:
+| SQL Injection | Use parameterized queries, validate input, enforce least privilege |
+
+4. Generate section outputs:
+   - vulnerability classification section
+   - severity section
+   - mitigation section
+
+5. Inject sections into full_report.txt placeholders:
+   - {VULN_CLASSIFICATION_SECTION}
+   - {SEVERITY_SECTION}
+   - {MITIGATION_SECTION}
+
+6. Fill remaining placeholders with sample data:
+   - {EXEC_SUMMARY}
+   - {SYSTEM}
+   - {SCAN_SOURCE}
+   - {RISK_ROWS}
+   - {CONCLUSION}
+
+7. Save final output to:
+   ../experiments/final_report.md
+
+OUTPUT:
+Return only the Python script.

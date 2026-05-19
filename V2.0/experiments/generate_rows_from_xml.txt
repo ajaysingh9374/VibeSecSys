@@ -1,0 +1,59 @@
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys v2.0
+-Goal: Produce professional cybersecurity report
+-Development method: PROMPTS → CODEX BUILDS → we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+
+CURRENT STAGE: Real Data Row Generation from XML
+
+OBJECTIVE:
+Extract vulnerability information from an XML scan file and generate structured table rows for report templates.
+
+STRICT OUTPUT RULES:
+- DO NOT explain anything
+- DO NOT add extra text
+- OUTPUT MUST BE ONLY THE REQUIRED ROW BLOCKS
+- FOLLOW EXACT TABLE FORMAT
+
+TASK:
+
+1. Read and analyse the XML file:
+   ./samples/VibeSecSys.xml
+2. Identify relevant vulnerability information:
+   - Target system / host
+   - Services and ports
+   - Detected issues or risks
+   - Evidence (service/version, misconfigurations, etc.)
+3. Generate:
+
+VULN_CLASSIFICATION_ROWS:
+FORMAT:
+| System | Vulnerability | Classification | Evidence-Based Impact |
+
+SEVERITY_ROWS:
+FORMAT:
+| ID | Target System | Vulnerability | Severity | Potential Impact |
+
+MITIGATION_ROWS:
+FORMAT:
+| Vulnerability | Recommended Mitigation |
+
+RULES:
+- Assign IDs sequentially (VULN-001, VULN-002…)
+- Map vulnerabilities to OWASP categories where applicable, otherwise use "Service Misconfiguration"
+- Severity must be one of: Critical / High / Medium / Low
+- Impact must reflect real security consequences
+- Use concise, professional language
+
+OUTPUT STRUCTURE:
+
+VULN_CLASSIFICATION_ROWS:
+<rows>
+
+SEVERITY_ROWS:
+<rows>
+
+MITIGATION_ROWS:
+<rows>

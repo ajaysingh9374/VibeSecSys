@@ -1,0 +1,69 @@
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys v2.0
+-Goal: Produce professional cybersecurity report
+-Development method: PROMPTS → CODEX BUILDS → we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+CURRENT STAGE: Final Structured Row Generation (Asset + Vulnerability + Mitigation IDs)
+
+OBJECTIVE:
+Generate structured table rows from XML scan data with full support for Asset IDs, Vulnerability IDs, and Mitigation IDs.
+
+STRICT OUTPUT RULES:
+- OUTPUT MUST CONTAIN ONLY THE REQUIRED ROW BLOCKS
+- DO NOT explain anything
+- DO NOT add extra text
+- FOLLOW EXACT TABLE FORMAT
+
+TASK:
+
+1. Read and analyse XML file:
+   ../samples/VibeSecSys.xml
+2. Identify:
+   - Hosts (systems)
+   - Services and ports
+   - Security risks / exposures
+   - Evidence (service, version, access, misconfigurations)
+3. Assign IDs:
+- Asset IDs:
+  - ASSET-001, ASSET-002, ...
+  - One per unique host
+  - Same host must reuse same Asset ID
+- Vulnerability IDs:
+  - VULN-001, VULN-002, ...
+  - Sequential
+- Mitigation IDs:
+  - MIT-001, MIT-002, ...
+  - One mitigation per vulnerability
+  - Must align with vulnerability ID (VULN-001 → MIT-001)
+4. Generate output:
+
+VULN_CLASSIFICATION_ROWS:
+FORMAT:
+| Asset ID | System | Vulnerability | Classification | Evidence-Based Impact |
+
+SEVERITY_ROWS:
+FORMAT:
+| VULN ID | Asset ID | Target System | Vulnerability | Severity | Potential Impact | Mitigation ID |
+
+MITIGATION_ROWS:
+FORMAT:
+| MIT ID | Vulnerability | Recommended Mitigation |
+
+RULES:
+- Severity must be: Critical / High / Medium / Low
+- Map to OWASP where applicable
+- Otherwise use "Service Misconfiguration"
+- Use concise, professional language
+- Ensure IDs remain consistent across all tables
+
+OUTPUT STRUCTURE:
+
+VULN_CLASSIFICATION_ROWS:
+<rows>
+
+SEVERITY_ROWS:
+<rows>
+
+MITIGATION_ROWS:
+<rows>

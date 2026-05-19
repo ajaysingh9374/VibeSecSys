@@ -1,0 +1,14 @@
+Based on the XML file:
+../Samples/VibeSecSys.xml
+
+TASK:
+Generate the SCAN_SOURCE section for a cybersecurity report.
+
+INSTRUCTIONS:
+- Identify the scanning tool and data format
+- Describe how the scan data was processed (no implementation details)
+- Keep it factual and concise
+- Do NOT explain your reasoning
+
+OUTPUT:
+Return ONLY the SCAN_SOURCE section text.

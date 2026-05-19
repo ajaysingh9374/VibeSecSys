@@ -1,0 +1,5 @@
+### Vulnerability Classification Table
+
+| System | Vulnerability | Classification | Evidence-Based Impact |
+|--------|--------------|----------------|----------------------|
+{VULN_CLASSIFICATION_ROWS}

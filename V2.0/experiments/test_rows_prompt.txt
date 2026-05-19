@@ -1,0 +1,54 @@
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys v2.0
+-Goal: Produce professional cybersecurity report
+-Development method: PROMPTS → CODEX BUILDS → we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+
+CURRENT STAGE: Structured Row Generation
+
+OBJECTIVE:
+Generate structured cybersecurity analysis output as TABLE ROWS ONLY.
+
+STRICT RULES:
+- DO NOT generate full report
+- DO NOT include explanations
+- DO NOT add headings
+- DO NOT add extra text
+- OUTPUT MUST BE TABLE ROW FORMAT ONLY
+- FOLLOW EXACT COLUMN ORDER
+
+TASK:
+
+Given the following scan findings, generate:
+
+1. VULN_CLASSIFICATION_ROWS
+FORMAT:
+| System | Vulnerability | Classification | Evidence-Based Impact |
+
+2. SEVERITY_ROWS
+FORMAT:
+| ID | Target System | Vulnerability | Severity | Potential Impact |
+
+3. MITIGATION_ROWS
+FORMAT:
+| Vulnerability | Recommended Mitigation |
+
+INPUT DATA:
+- System: web-prod
+- Finding: SQL Injection
+- Evidence: Data extraction from database
+- Classification: OWASP A03
+- Severity: High
+
+EXPECTED OUTPUT STRUCTURE:
+
+VULN_CLASSIFICATION_ROWS:
+<rows here>
+
+SEVERITY_ROWS:
+<rows here>
+
+MITIGATION_ROWS:
+<rows here>

@@ -1,0 +1,30 @@
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys v2.0
+-Goal: Produce professional cybersecurity report
+-Development method: PROMPTS → CODEX BUILDS → we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+
+CURRENT STAGE: Inject Final Clean Rows into Report
+
+OBJECTIVE:
+Update the existing Python script to use the latest cleaned rows (with Asset, VULN, and MIT IDs) and generate the final report.
+
+STRICT OUTPUT RULES:
+- OUTPUT MUST BE ONLY PYTHON CODE
+- DO NOT explain anything
+
+TASK:
+
+1. Take the previously generated script for template injection
+2. Replace the hardcoded test rows with the following cleaned rows:
+<PASTE YOUR FINAL CLEAN ROWS HERE>
+3. Ensure:
+- All placeholders are correctly replaced
+- Sections are injected into full_report.txt
+- Final report is written to:
+  ../experiments/final_report.md
+4. Keep all existing logic unchanged except row values
+OUTPUT:
+Return the updated Python script only.

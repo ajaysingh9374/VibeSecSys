@@ -1,0 +1,16 @@
+Using the following information:
+- SYSTEM description
+- Severity distribution (Critical/High/Medium findings)
+- Risk assessment results
+
+TASK:
+Generate the EXEC_SUMMARY section for the report.
+
+INSTRUCTIONS:
+- High-level, non-technical tone
+- Mention overall risk posture
+- Reflect actual findings (no generic wording)
+- Do NOT explain
+
+OUTPUT:
+Return ONLY the EXEC_SUMMARY text.

@@ -1,0 +1,15 @@
+Read the XML file:
+../Samples/VibeSecSys.xml
+
+TASK:
+Derive the SYSTEM section for a cybersecurity report.
+
+INSTRUCTIONS:
+- Identify all assessed hosts (IP addresses)
+- Describe the environment at a high level (number of systems, types inferred from services)
+- Use professional academic tone
+- Do NOT reference vulnerabilities yet
+- Do NOT explain how you derived it
+
+OUTPUT:
+Return ONLY the SYSTEM section text.

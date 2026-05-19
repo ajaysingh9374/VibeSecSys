@@ -1,0 +1,37 @@
+PROJECT: VibeSecSys v2.0
+
+CURRENT STAGE: Template Injection Script Generation
+
+OBJECTIVE:
+Generate a Python script that injects structured AI-generated rows into predefined template files and produces a combined report.
+
+STRICT RULES:
+- DO NOT explain anything
+- DO NOT add comments unless necessary
+- OUTPUT MUST BE COMPLETE PYTHON CODE ONLY
+- NO markdown, NO explanation, NO text outside code
+
+TASK:
+Generate a Python script that:
+1. Reads the following template files:
+   -../templates/vuln_classification.txt
+   -../templates/severity_assessment.txt
+   -../templates/mitigation_table.txt
+2. Replaces the placeholders:
+   - {VULN_CLASSIFICATION_ROWS}
+   - {SEVERITY_ROWS}
+   - {MITIGATION_ROWS}
+3. Uses the following hardcoded data (for testing):
+VULN_CLASSIFICATION_ROWS:
+| web-prod | SQL Injection | OWASP A03 | Data extraction from database |
+SEVERITY_ROWS:
+| VULN-001 | web-prod | SQL Injection | High | Data extraction from database |
+MITIGATION_ROWS:
+| SQL Injection | Use parameterized queries, validate input, enforce least privilege |
+4. Combines all three sections into one report
+5. Saves output to:
+   ../experiments/final_report.md
+
+OUTPUT:
+- Only Python code
+- No explanation

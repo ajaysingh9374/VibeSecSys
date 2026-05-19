@@ -1,0 +1,23 @@
+Read the following context derived from the same XML scan data:
+
+- SYSTEM section (assessed hosts and environment)
+- EXEC_SUMMARY (overall risk posture)
+- RISK_ROWS (OCTAVE / STRIDE risk assessment)
+- Vulnerability severity and mitigation themes already identified
+
+TASK:
+Generate the CONCLUSION section for a cybersecurity analysis report.
+
+INSTRUCTIONS:
+- Summarise the overall security posture
+- Emphasise priority areas for remediation
+- Do NOT introduce new findings
+- Do NOT repeat the executive summary verbatim
+- Use professional, academic tone
+- Keep it concise and report‑ready
+
+OUTPUT RULES:
+- Return ONLY the CONCLUSION text
+- No heading
+- No explanation
+- No bullet points

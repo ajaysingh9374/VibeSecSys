@@ -1,0 +1,5 @@
+### Vulnerability Severity and Impact Assessment
+
+| ID | Target System | Vulnerability | Severity | Potential Impact |
+|----|--------------|--------------|----------|------------------|
+{SEVERITY_ROWS}

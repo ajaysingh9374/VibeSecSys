@@ -1,0 +1,5 @@
+### Mitigation Recommendations
+
+| Vulnerability | Recommended Mitigation |
+|---------------|----------------------|
+{MITIGATION_ROWS}

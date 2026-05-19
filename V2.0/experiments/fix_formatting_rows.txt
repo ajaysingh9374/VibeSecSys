@@ -1,0 +1,43 @@
+PROJECT CONTEXT (DO NOT CHANGE)
+-Project: VibeSecSys v2.0
+-Goal: Produce professional cybersecurity report
+-Development method: PROMPTS → CODEX BUILDS → we validate
+-Strict step-by-step execution (NO scope jumps)
+-Co-development with CodeX + K2509118 (Myself)
+
+CURRENT STAGE: Fix Row Formatting and Structure
+
+OBJECTIVE:
+Correct formatting issues in generated rows to ensure they match strict table format requirements for template injection.
+
+STRICT RULES:
+- OUTPUT ONLY corrected row blocks
+- DO NOT explain
+- DO NOT change vulnerability meaning
+- ONLY fix formatting and structure
+
+TASK:
+Given the previously generated rows:
+1. Ensure ALL rows use proper table format:
+   -Must start and end with "|"
+   -Columns must be clearly separated
+   -DO NOT split grouped vulnerabilities if it affects ID consistency
+2. Fix structure issues:
+   -Separate "System" column from hostname
+   -Use ONLY IP address in "System" column
+3. Do not split grouped vulnerabilities (preserve ID consistency)
+4. Keep:
+   -Asset IDs
+   -VULN IDs
+   -MIT IDs (unchanged)
+5. Maintain consistency across all tables
+
+OUTPUT:
+VULN_CLASSIFICATION_ROWS:
+<rows>
+
+SEVERITY_ROWS:
+<rows>
+
+MITIGATION_ROWS:
+<rows>
