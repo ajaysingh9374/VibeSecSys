@@ -38,7 +38,6 @@ INPUT DATA
 
 TASK: Generate OCTAVE and STRIDE analysis based on the provided report file.
 Use AI to produce professional OCTAVE and STRIDE analysis from the provided report file as a one-time document generation step.
-
 Use AI to generate a formal OCTAVE and STRIDE report from the provided report content as a one-time document generation step
 
 Requirements:

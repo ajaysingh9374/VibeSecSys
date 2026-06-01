@@ -18,11 +18,8 @@ REPOSITORY STRUCTURE (context only, Do NOT change the repository structure unles
 
 PROMPT HISTORY (mandatory tracking):
 - Save this prompt under prompts/
-- Use naming:
-  prompts/stage<stage>-step<step>-<short-name>.txt
-- Example:
-  prompts/stage3-step3-cyberlab-report.txt
-- Keep prompts simple, readable, reusable
+- Use naming: prompts/stage<stage>-step<step>-<short-name>.txt
+- Example: prompts/stage3-step3-cyberlab-report.txt
 
 GLOBAL GUARDRAILS (fixed for this stage):
 - Follow only the current stage and step.

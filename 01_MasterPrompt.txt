@@ -2,7 +2,7 @@ VibeSecSys Development Prompt
 
 PROJECT CONTEXT (DO NOT CHANGE)
 - Project: VibeSecSys
-- Goal: Build a working cybersecurity application (NOT coursework)
+- Goal: Build a working cybersecurity application 
 - Development method: PROMPTS → CODEX BUILDS → we validate
 - Strict step-by-step execution (NO scope jumps)
 
@@ -22,11 +22,8 @@ REPOSITORY STRUCTURE (DO NOT MODIFY unless instructed)
 - main.py      : Entry point
 
 PROMPT TRACKING (MANDATORY)
-- Save this file as:
-  prompts/stage<stage>-step<step>-<short-name>.txt
-
-- Example:
-  prompts/stage5-step1-ai-integration.txt
+- Save this file as: prompts/stage<stage>-step<step>-<short-name>.txt
+- Example: prompts/stage5-step1-ai-integration.txt
 
 RULES (STRICT)
 - DO NOT jump to other stages
